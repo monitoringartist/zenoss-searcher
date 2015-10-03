@@ -30,4 +30,3 @@ for file in files:
                ecode = 1
 
 sys.exit(ecode)
-
