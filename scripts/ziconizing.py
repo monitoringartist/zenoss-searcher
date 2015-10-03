@@ -910,7 +910,7 @@ def iconizing(name, keywords):
         return 'database'
     if any(word in keywords for word in 'aws amazon ec ec2 elb rds'.split(' ')):
         return 'amazon'
-    if any(word in keywords for word in 'grafana grafana'.split(' ')):
+    if any(word in keywords for word in 'grafana grafana graph'.split(' ')):
         return 'bar-chart'
     if any(word in keywords for word in 'linux debian fedore redhat yum ubuntu openbsd aix freebsd ux'.split(' ')):
         return 'linux'
@@ -926,7 +926,7 @@ def iconizing(name, keywords):
         return 'envelope'
     if any(word in keywords for word in 'java jvm tomcat jboss jmx'.split(' ')):
         return 'coffee'
-    if any(word in keywords for word in 'disks backup backupc array freenas raid qnap hdd disk netapp storwize purestorage synology hddtemp iostat emc storage veeam'.split(' ')):
+    if any(word in keywords for word in 'veritas disks backup backupc array freenas raid qnap hdd disk netapp storwize purestorage synology hddtemp iostat emc storage veeam'.split(' ')):
         return 'hdd-o'
     if any(word in keywords for word in 'weather'.split(' ')):
         return 'bolt'
@@ -940,7 +940,7 @@ def iconizing(name, keywords):
         return 'video-camera'
     if any(word in keywords for word in 'ups apc'.split(' ')):
         return 'battery-half'
-    if any(word in keywords for word in 'windows'.split(' ')):
+    if any(word in keywords for word in 'wmi windows'.split(' ')):
         return 'windows'
     if any(word in keywords for word in 'vm kvm openvz xen vmware esxi server'.split(' ')):
         return 'server'
