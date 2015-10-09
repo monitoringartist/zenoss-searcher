@@ -9,7 +9,7 @@ d = pq(url='http://wiki.zenoss.org/All_ZenPacks')
 for a in d('.smw-column li a'):
 
     name = a.text.strip() + ' ZenPack'
-    if name startswith('ZenPack.'):
+    if name.startswith('ZenPack.'):
         continue
     url = 'http://wiki.zenoss.org' + a.get('href')
     arr[name.replace(' ','-')] = {
