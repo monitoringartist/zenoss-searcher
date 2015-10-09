@@ -22,7 +22,7 @@ $.getJSON('./sources/zenoss-wiki.json', function (projects) {
   Object.keys(projects).forEach( function (key) {
     var project = projects[key]
     var charHTML
-    charHTML = "<div><a target='_blank' onclick=\"ga('send', 'event', 'click', 'Github: " + project['name'] + "'); return true;\" title='#" + counter + " " + project['name'] + "' href='" + 
+    charHTML = "<div><a target='_blank' onclick=\"ga('send', 'event', 'click', 'Wiki: " + project['name'] + "'); return true;\" title='#" + counter + " " + project['name'] + "' href='" + 
       project['url'] + "'><i class='fa fa-" + project['icon'] + "'></i> " + project['name'] + "</a></div>"
     container.append("<li class='result emoji-wrapper'>" +
       charHTML + "<span class='keywords'>" + project["keywords"] + "</span></li>")
