@@ -5,7 +5,7 @@ COPY run.sh /
 
 RUN \
   apt-get update && \
-  apt-get install -y wget unzip && \
+  apt-get install -y wget unzip curl && \
   apt-get clean all && \
   rm -rf /tmp/* && \
   chmod +x /run.sh
